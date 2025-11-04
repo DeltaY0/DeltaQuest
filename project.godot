@@ -11,18 +11,17 @@ config_version=5
 [application]
 
 config/name="Delta Quest"
-run/main_scene="uid://6vqwpu301deu"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-UserData="*res://scripts/UserData.cs"
+BattleManager="*res://prototype/BattleManager.cs"
 
 [display]
 
-window/size/viewport_width=720
-window/size/viewport_height=1080
+window/size/viewport_width=1080
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 
 [dotnet]

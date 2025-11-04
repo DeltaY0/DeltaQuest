@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgrjq0l175832"]
+
+[ext_resource type="Texture2D" uid="uid://clhxsfqnnov6j" path="res://icon.svg" id="1_bbw2o"]
+[ext_resource type="Script" uid="uid://do7fh65s0kk2p" path="res://prototype/Character.cs" id="2_rujdh"]
+
+[node name="Character" type="Sprite2D"]
+scale = Vector2(0.42628235, 0.5875278)
+texture = ExtResource("1_bbw2o")
+script = ExtResource("2_rujdh")
+
+[node name="health_bar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(128.805, 19.715)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.4025
+offset_top = -93.612595
+offset_right = 0.40249634
+offset_bottom = -66.612595
+grow_horizontal = 2
+step = 0.5
+value = 100.0

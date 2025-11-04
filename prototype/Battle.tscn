@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsk4bdq7fiq0"]
+
+[ext_resource type="PackedScene" uid="uid://dgrjq0l175832" path="res://prototype/character.tscn" id="1_omw3i"]
+
+[node name="Battle" type="Node2D"]
+
+[node name="Player Slot 1" type="Marker2D" parent="."]
+position = Vector2(135, 434)
+gizmo_extents = 51.0
+
+[node name="Character" parent="Player Slot 1" instance=ExtResource("1_omw3i")]
+
+[node name="Player Slot 2" type="Marker2D" parent="."]
+position = Vector2(260, 434)
+gizmo_extents = 51.0
+
+[node name="Character" parent="Player Slot 2" instance=ExtResource("1_omw3i")]
+
+[node name="Player Slot 3" type="Marker2D" parent="."]
+position = Vector2(389, 434)
+gizmo_extents = 51.0
+
+[node name="Character" parent="Player Slot 3" instance=ExtResource("1_omw3i")]
+
+[node name="Enemy Slot 1" type="Marker2D" parent="."]
+position = Vector2(776, 434)
+gizmo_extents = 51.0
+
+[node name="Character" parent="Enemy Slot 1" instance=ExtResource("1_omw3i")]
+
+[node name="Enemy Slot 2" type="Marker2D" parent="."]
+position = Vector2(931, 434)
+gizmo_extents = 51.0
+
+[node name="Character" parent="Enemy Slot 2" instance=ExtResource("1_omw3i")]
